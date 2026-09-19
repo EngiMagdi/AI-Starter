@@ -9,52 +9,82 @@
     <title>project 3</title>
 </head>
 <body>
-    <!-- nav -->
-  <nav class=" fixed w-full z-10 shadow-xl bg-white ">
-    <div class="container py-4 px-5 mx-auto flex justify-between items-center text-transform:capitalize ">
-        <div class="logo flex items-center">
-             <i class="fas fa-robot  text-2xl md:text-xl text-blue-700 mr-2  md:mr-3"></i> 
-            <h2 class=" text-2xl md:text-xl font-bold text-transform:capitalize">AI Starter</h2>
-        </div>
+   <!-- nav -->
+   <nav class="fixed top-0 left-0 w-full z-50 bg-white shadow-xl">
+    <!-- container -->
 
-        <div class="links  hidden md:flex">
-            <ul class="flex gap-6 text-base font-medium  capitalize">
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300 "> home </li>
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> feature</li>
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> how it work </li>
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> pricing</li>
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300">testimonials</li>
-                <li class="hover:text-blue-500 cursor-pointer transition duration-300">blog</li>
+    <div class="container mx-auto px-5 lg:px-8 py-3 md:py-4 flex justify-between items-center">
+
+        <!-- logo -->
+        <div class="logo flex items-center">
+            <i class="fas fa-robot text-lg md:text-2xl text-blue-600 mr-2 md:mr-3"></i>
+            <h2 class="text-lg md:text-2xl font-bold capitalize"> AI Starter</h2>
+        </div><!-- /logo -->
+
+
+        <!-- links -->
+        <div class="links hidden md:flex">
+            <ul class="flex items-center gap-6 lg:gap-8 text-sm lg:text-base font-medium capitalize">
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300">home</li>
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300">features</li>
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300">how it works</li>
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300">pricing</li>
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300">testimonials</li>
+
+                <li class="hover:text-blue-600 cursor-pointer transition duration-300"> blog</li>
             </ul>
-        </div>
-        <button class="text-xl md:text-lg  h-14 w-40  md:w-50  font-bold text-transform: capitalize text-white bg-blue-500 md:px-6 py-2 rounded-lg cursor-pointer hover bg-blue-600: hover:shadow-lg transition duration-500 ease-in"  > get start</button>
-    </div>
-</nav><!--/nav -->
+        
+        </div><!-- /links -->
+
+
+        <button class="text-xs md:text-sm font-bold capitalize text-white bg-blue-600 px-4 md:px-6 py-2 md:py-2.5 rounded-lg cursor-pointer hover:bg-blue-700 hover:shadow-lg transition duration-300">get started</button>
+
+    </div><!-- /container -->
+
+
+
+</nav><!-- /nav -->
+
 
 <!-- header -->
- <header  class="py-12 md:py-20" >
-    <div class="container mx-auto mt-8 py-20 px-5 flex flex-col md:flex-row justify-between items-center gap-10 ">
+<header  class="pt-28  pb-12 md:pt-32 md:pb-20" >
+    <div class="container mx-auto mt-8 px-5 flex flex-col md:flex-row justify-between items-center gap-10 ">
         <!-- caption -->
         <div class="caption w-full md:w-1/2   md:text-left">
-            <h1  class=" ext-left text-4xl md:text-5xl  font-bold text-transform: capitalize leading-tight "> build smarter <span class="text-blue-600">work faster</span></h1>
-            <p class="mt-5 text-gray-600 text-base md:text-lg leading-7 ">AiStarter helps you turn your ideas into reality with  powerful AI tools, simple workflows and everything you needto be more production</p>
-         
+            <h1  class=" text-left text-4xl md:text-5xl lg:text-6xl  font-bold capitalize leading-tight "> build smarter <span class=" block text-blue-600">work faster</span></h1>
+            <p class="mt-5 text-gray-600 text-base md:text-lg lg:text-xl leading-7 max-w-xl ">Ai Starter helps you turn your ideas into reality with  powerful AI tools, simple workflows and everything you need to be more productive</p>
+          
             <!-- ul -->
-            <ul class=" mt-6 flex flex-wrap justify-start gap-4 text-sm md:text-base font-medium ">
-                <li class=" flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> 10 + AI tools  </li>
-                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> easy to use</li>
-                <li class=" flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> save time </li>
-            </ul>  <!-- /ul -->
+            <ul class="mt-6 flex flex-wrap justify-start gap-5 text-base md:text-lg font-medium">
+
+                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i>10+ AI tools </li>
+    
+                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i>Easy to use</li>
+
+                <li class="flex items-center gap-2"> <i class="fas fa-check-circle text-blue-600"></i>Save time</li>
+            
+            </ul><!-- /ul -->
+
+
 
             <!-- btnDiv -->
-            <div class="btnDiv mt-8 flex flex-wrap  justify-start gap-4"> 
-                 <button class="text-sm font-bold text-transform: capitalize text-white bg-blue-500 px-6 py-2 rounded-lg cursor-pointer hover:shadow-lg transition duration-500 ease-in"  > get start free</button>
-                <button class="text-sm font-bold text-transform: capitalize text-blue-500  border border-blue-400 px-6 py-2 rounded-lg cursor-pointer hover:shadow-lg transition duration-500 ease-in"  > watch demo</button>
-            </div> <!-- /btnDiv -->
+            <div class="btnDiv mt-8 flex flex-col md:flex-row justify-start gap-4">
+
+                <button class="  w-75  text-sm md:text-base font-bold capitalize text-white bg-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer hover:bg-blue-700 hover:shadow-lg transition duration-300">get started free</button>
+
+                <button class=" w-75 text-sm md:text-base font-bold capitalize text-blue-600 border border-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer hover:bg-blue-50 hover:shadow-lg transition duration-300"><i class="fas fa-play mr-2"></i>  watch demo</button>
+
+            </div><!-- /btnDiv -->
+
         </div> <!-- /caption -->
 
         <!-- headerImg -->
-             <div class="headerImg w-full md:w-1/2 min-h-80 rounded-3xl bg-gradient-to-br from-blue-100 via-blue-50 to-white relative overflow-hidden">
+             <div class="headerImg w-full md:w-1/2 h-80 md:h-96 rounded-3xl bg-gradient-to-br from-blue-500 via-blue-400 to-blue-300 relative overflow-hidden">
 
             <!-- robot -->
             <div class="absolute inset-0 flex items-center justify-center">
@@ -64,32 +94,26 @@
             </div>
 
             <!-- decorative circles -->
-            <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-blue-200 opacity-60"></div>
-            <div class="absolute -bottom-12 -left-12 w-40 h-40 rounded-full bg-blue-100 opacity-70"></div>
-
-        
-
+            <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-purple-400/40"></div>
+            <div class="absolute -bottom-12 -left-12 w-40 h-40 rounded-full bg-pink-400/30"></div>
+            
         </div>  <!-- /headerImg -->
-
-
 
     </div>
 
-
- </header>
- <!--/ header -->
+ </header> <!--/ header -->
 
  <!-- features -->
- <section class="features py-14 md:py-20">
+ <section class="features py-16 md:py-20">
     <!-- ourFeatures -->
-    <div class="ourFeatures container  py-3 px-5 mx-auto text-transform: capitalize  ">
-        <h2 class="text-center text-3xl md:text-4xl py-3 font-bold text-blue-600 "> our Features</h2>
-        <p class="text-center  text-gray-600 mt-4 mx-auto leading-7 ">everything you need in one place ,powerful features designed to help you work smarter,save time and achieve your goals faster</p>
+    <div class="ourFeatures container   px-5  lg:px-8 mx-auto  capitalize  ">
+        <h2 class="text-center text-3xl md:text-4xl  font-bold  "> our Features</h2>
+        <p class=" text-center  mx-auto text-gray-600 mt-4  leading-7  after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:mx-auto after:mt-5 after:rounded-full">Powerful AI features to help you work smarter, save time, and achieve more.</p>
     <!-- cardContainer-->
         <div class="cardContainer grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
 
             <!-- card -->
-            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card  p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
 
                 <!-- icon -->
                 <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
@@ -100,7 +124,7 @@
                   <p class="text-gray-600 mt-3 leading-6">Create and improve your content with powerful AI tools.</p>
 
                                
-                  <ul class="mt-5 space-y-3 text-gray-600">
+                  <ul class="mt-5 space-y-3   text-sm md:text-base text-gray-600">
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create content</li>
 
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Improve your writing</li>
@@ -109,20 +133,19 @@
                 </ul>
             </div> <!-- /card -->
 
-
             <!-- card -->
-            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
 
                 <!-- icon -->
                 <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
                     <i class="fas fa-image text-2xl text-blue-600"></i>
                 </div>
 
-                <h3 class="text-xl font-bold capitalize"> image generator </h3>
-                   <p class="text-gray-600 mt-3 leading-6">Turn your ideas into beautiful visuals in just seconds.</p>
+                <h3 class="text-lg md:text-xl font-bold capitalize"> image generator </h3>
+                   <p class="text-gray-600  text-sm md:text-base mt-3 leading-6">Turn your ideas into beautiful visuals in just seconds.</p>
 
                          
-                   <ul class="mt-5 space-y-3 text-gray-600">
+                   <ul class="mt-5 space-y-3 text-sm md:text-base  text-gray-600">
                    
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Generate unique images</li>
 
@@ -131,36 +154,32 @@
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create stunning designs</li>
                 </ul>
 
-        </div><!-- /card -->
-
+            </div><!-- /card -->
 
             <!-- card -->
-            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card  p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
                
                         <!-- icon -->
                 <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
                     <i class="fas fa-code text-2xl text-blue-600"></i>
                  </div>
 
-                <h3 class="text-xl font-bold capitalize"> code assistant</h3>
+                <h3 class="text-lg md:text-xl  font-bold capitalize"> code assistant</h3>
 
-                <p class="text-gray-600 mt-3 leading-6">Write better code and solve programming problems faster.</p>
+                <p class="text-gray-600  text-sm md:text-base mt-3 leading-6">Write better code and solve problems faster with AI.</p>
                 
-                <ul class="mt-5 space-y-3 text-gray-600">
+                <ul class="mt-5 space-y-3  text-sm md:text-base text-gray-600">
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Get coding suggestions</li>
 
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Find and fix errors</li>
 
                     <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Write code faster</li>
                 </ul>
-
-                
                 
             </div>
             <!-- /card -->
 
-        </div>
-        <!-- /cards -->
+        </div><!-- /cards -->
 
 
     
@@ -169,234 +188,384 @@
 
  
  <!-- statistics -->
-<section class="statistics py-14 md:py-20 bg-gradient-to-r from-blue-600 to-blue-400">
-    <div class="container mx-auto px-5">
+<section class="statistics py-14 md:py-20 bg-gradient-to-b from-blue-500 to-blue-300 relative  overflow-hidden">
+    <!-- decorative circles -->
+           
+   <div class="absolute -top-16 -left-16 w-50 h-50 rounded-full bg-blue-200 opacity-60"></div>
+   <div class="absolute -bottom-12 -right-12 w-40 h-40 rounded-full bg-blue-100 opacity-60"></div>
 
+    <div class="container relative z-10  mx-auto px-5">
+        <!-- items container -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
-
+             <!-- item -->
             <div class="item">
-                <i class="fas fa-users text-2xl "></i>
-                <h3 class="text-3xl md:text-4xl font-bold mt-3">
-                    50K+
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Active Users
-                </p>
-            </div>
+                <i class="fas fa-users text-3xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">50K+</h3>
+                <p class="text-white/80 text-sm md:text-base mt-2">Active Users</p>
+            </div> <!-- /item -->
 
+             <!-- item -->
             <div class="item">
-                <i class="fas fa-folder-open text-2xl "></i>
-                <h3 class="text-3xl md:text-4xl font-bold mt-3">
-                    1M+
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Projects Created
-                </p>
-            </div>
+                <i class="fas fa-folder-open text-3xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">1M+</h3>
+                <p class="text-white/80 text-sm md:text-base mt-2">Projects Created</p>
+            </div> <!--/ item -->
 
+             <!-- item -->
             <div class="item">
-                <i class="fas fa-star text-2xl "></i>
-                <h3 class="text-3xl md:text-4xl font-bold mt-3">
-                    4.9/5
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    User Satisfaction
-                </p>
-            </div>
+                <i class="fas fa-star text-3xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">4.9/5</h3>
+                <p class="text-white/80 text-sm md:text-base mt-2">User Satisfaction</p>
+            </div> <!-- /item -->
 
+            <!-- item -->
             <div class="item">
-                <i class="fas fa-globe text-2xl "></i>
-                <h3 class="text-3xl md:text-4xl font-bold mt-3">
-                    120+
-                </h3>
-                <p class="text-gray-600 mt-2">
-                    Countries
-                </p>
-            </div>
+                <i class="fas fa-globe text-3xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">120+</h3>
+                <p class="text-white/80 text-sm md:text-base mt-2">Countries</p>
+            </div> <!-- /item -->
 
-        </div>
+        </div> <!-- /items container -->
+
     </div>
+
 </section><!-- /statistics -->
 
 <!-- team -->
-<section class="team py-14 md:py-20">
+<section class="team py-16 md:py-20">
     <div class="container mx-auto px-5">
 
         <!-- section header -->
         <div class="text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold capitalize">
-                meet our creative team
-            </h2>
-
-            <p class="text-gray-600 mt-4 leading-7">
-                A creative team building smart AI solutions to help you
-                work better, faster and more efficiently.
-            </p>
-        </div>
+            <!-- title -->
+            <h2 class="text-3xl md:text-4xl font-bold capitalize"> meet our team</h2>
+            <p class="text-gray-600 mt-4 leading-7">A creative team building smart AI solutions to help you work better</p>
+        </div><!-- /section header -->
 
         <!-- team items -->
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
 
-            <div class="teamItem text-center">
-                <div class="overflow-hidden rounded-xl">
-                    <div class="h-56 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-robot text-6xl text-blue-600"></i>
-                    </div>
-                </div>
+            <!-- team item 1 -->    
+            <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
+                <!-- colored part -->
+                <div class="relative group">
+                    <!-- linear gradient background -->
+                    <div class="h-56 bg-gradient-to-br from-blue-500 via-blue-300 to-blue-100 flex items-center justify-center">
+                        <!-- main icon -->
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-robot text-4xl text-blue-600"></i> </div>
+                    </div><!-- /linear gradient background -->
 
-                <h3 class="text-xl font-bold mt-5">
-                    AI Specialist
-                </h3>
+      
+                    <!-- hover layer -->
+                    <div class="absolute inset-0 bg-blue-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+            
+                        <!-- instagram -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-blue-600 text-lg"></i></div>
 
-                <p class="text-gray-500 mt-2">
-                    AI Solutions
-                </p>
-            </div>
+           
+                        <!-- twitter -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-blue-600 text-lg"></i></div>
 
-            <div class="teamItem text-center">
-                <div class="overflow-hidden rounded-xl">
-                    <div class="h-56 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-code text-6xl text-blue-600"></i>
-                    </div>
-                </div>
+            
+                        <!-- facebook -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-blue-600 text-lg"></i></div>
 
-                <h3 class="text-xl font-bold mt-5">
-                    Developer
-                </h3>
+                    </div> <!--/ hover layer -->
 
-                <p class="text-gray-500 mt-2">
-                    Technology
-                </p>
-            </div>
+                </div><!-- /colored part -->
 
-            <div class="teamItem text-center">
-                <div class="overflow-hidden rounded-xl">
-                    <div class="h-56 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-lightbulb text-6xl text-blue-600"></i>
-                    </div>
-                </div>
+                <!-- card content -->
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Ahmed Mohamed</h3>
+                    <p class="text-blue-600 font-medium mt-2">AI Specialist</p>
+                    <p class="text-gray-500 text-sm mt-3 leading-6"> 10 years of experience in AI solutions and smart technologies.</p>
+                </div> <!-- /card content -->
 
-                <h3 class="text-xl font-bold mt-5">
-                    Creative Expert
-                </h3>
+            </div><!--/ team item 1 --> 
 
-                <p class="text-gray-500 mt-2">
-                    Creative Ideas
-                </p>
-            </div>
 
-            <div class="teamItem text-center shadow-lg">
-                <div class="overflow-hidden rounded-xl">
-                    <div class="h-56 bg-blue-100 flex items-center justify-center">
-                        <i class="fas fa-chart-line text-6xl text-blue-600"></i>
-                    </div>
-                </div>
+  
+            <!-- team items 2-->
+            <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
+                <!-- colored part -->
+                <div class="relative group">
+                    <!-- linear gradient background -->
+                    <div class="h-56 bg-gradient-to-br from-purple-500 via-purple-300 to-purple-100 flex items-center justify-center">
 
-                <h3 class="text-xl font-bold mt-5">
-                    Product Expert
-                </h3>
+                        <!-- main icon -->
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-code text-4xl text-purple-600"></i></div>
 
-                <p class="text-gray-500 mt-2">
-                    Smart Products
-                </p>
-            </div>
+                    </div>  <!-- /linear gradient background -->
+        
+                    <!-- hover layer -->
+                    <div class="absolute inset-0 bg-purple-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+            
+                        <!-- instagram  -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-purple-600 text-lg"></i></div>
+            
+                        <!-- twitter -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-purple-600 text-lg"></i></div>
+            
+                        <!-- facebook -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-purple-600 text-lg"></i></div>
 
-        </div>
+                    </div><!-- /hover layer -->
+    
+                </div>  <!-- /colored part -->
+
+   
+                <!-- card content -->
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Mohamed Ali</h3>
+                    <p class="text-purple-600 font-medium mt-2">Lead Developer</p>
+                    <p class="text-gray-500 text-sm mt-3 leading-6">8 years of experience in web development and modern technologies. </p>
+                </div> <!-- /card content -->
+
+            </div><!-- /team item 2 -->
+
+
+
+            <!-- team item 3 -->
+
+            <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
+
+                <!-- colored part -->
+                <div class="relative group">
+       
+                    <!-- linear gradient background -->
+                    <div class="h-56 bg-gradient-to-br from-pink-500 via-pink-300 to-pink-100 flex items-center justify-center">
+
+                        <!-- main icon -->
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-lightbulb text-4xl text-pink-600"></i></div>
+
+                    </div> <!--/linear gradient background -->
+
+       
+                    <!-- hover layer -->
+                    <div class="absolute inset-0 bg-pink-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+
+                        <!-- nstagram -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-pink-600 text-lg"></i></div>
+
+                        <!-- twitter -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-pink-600 text-lg"></i> </div>
+
+            
+                        <!-- facebook -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-pink-600 text-lg"></i> </div>
+        
+                    </div><!-- /hover layer -->
+
+                </div> <!-- /colored part -->
+
+
+                <!-- card content -->
+                <div class="p-5">
+                    <h3 class="text-xl font-bold">Sara Ahmed</h3>
+                    <p class="text-pink-600 font-medium mt-2"> Creative Director </p>
+                    <p class="text-gray-500 text-sm mt-3 leading-6"> 7 years of experience in creative design and digital ideas. </p>
+                </div><!-- /card content -->
+
+            </div> <!-- /team item 3 -->
+
+
+
+            <!-- team item 4 -->
+            <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
+
+                <!-- colored part -->
+                <div class="relative group">
+       
+                    <!-- linear gradient background -->
+                    <div class="h-56 bg-gradient-to-br from-green-500 via-green-300 to-green-100 flex items-center justify-center">
+
+                        <!-- main icon -->
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
+                            <i class="fas fa-chart-line text-4xl text-green-600"></i>
+                        </div> <!-- /main icon -->
+
+                    </div>    <!-- /linear gradient background -->
+
+       
+                    <!-- hover layer -->
+                     <div class="absolute inset-0 bg-green-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+
+                        <!-- instagram -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-green-600 text-lg"></i> </div>
+
+                        <!-- twitter -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-green-600 text-lg"></i> </div>
+
+                        <!-- facebook -->
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-green-600 text-lg"></i></div>
+
+                    </div>  <!-- /hover layer -->
+
+                </div><!--/colored part -->
+
+   
+                <!-- card content -->   
+                <div class="p-5">
+
+                    <h3 class="text-xl font-bold">Omar Hassan </h3>
+
+                    <p class="text-green-600 font-medium mt-2"> Marketing Director</p>
+
+                    <p class="text-gray-500 text-sm mt-3 leading-6"> 10 years of experience in marketing and brand strategy. </p>
+
+                </div> <!-- /card content -->
+
+            </div><!-- /team item 4 -->
+
+        </div>  <!-- /team items -->
+
     </div>
-</section>
-<!-- /team -->
- <!-- contact -->
-<section class="contact py-14 md:py-20">
-    <div class="container mx-auto px-5">
+</section><!-- /team -->
 
-        <!-- section header -->
-        <div class="text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold capitalize">
-                contact us
-            </h2>
 
-            <p class="text-gray-600 mt-4 leading-7">
-                Have a question or need help? Our team is here to help you
-                get the most out of AI Starter.
-            </p>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
 
-            <!-- contact info -->
-            <div>
-                <h3 class="text-2xl font-bold capitalize">
-                    let's talk
-                </h3>
-
-                <p class="text-gray-600 mt-4 leading-7">
-                    We'd love to hear from you. Send us a message and
-                    we'll get back to you as soon as possible.
-                </p>
-
-                <div class="mt-7 space-y-5">
-
-                    <div class="flex items-center gap-4">
-                        <i class="fas fa-envelope text-xl text-blue-600"></i>
-                        <span>hello@aistarter.com</span>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <i class="fas fa-phone text-xl text-blue-600"></i>
-                        <span>+20 100 000 0000</span>
-                    </div>
-
-                    <div class="flex items-center gap-4">
-                        <i class="fas fa-location-dot text-xl text-blue-600"></i>
-                        <span>Egypt</span>
-                    </div>
-
-                </div>
-            </div>
+<!-- contact -->
+<section class="contact py-16 md:py-20 bg-slate-950 text-white">
+ 
+        <div class=" container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-12">
 
             <!-- contact form -->
-            <form class="space-y-5">
+
+            <form class=" bg-slate-800 p-6 md:p-8 rounded-2xl shadow-lg space-y-5">
+                <h3 class="text-2xl font-bold "> Contact us</h3>
 
                 <input
                     type="text"
                     placeholder="Your Name"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-                >
-
-                <input
+                    class="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition duration-300" >
+                
+                    <input
                     type="email"
                     placeholder="Your Email"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-                >
-
-                <textarea
+                    class="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition duration-300">
+                
+                    <textarea
                     rows="5"
                     placeholder="Your Message"
-                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
-                ></textarea>
+                    class="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"                ></textarea>
 
                 <button
-                    type="submit"
-                    class="bg-blue-600 text-white font-bold px-7 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
-                >
-                    send message
-                </button>
+                    type="submit" class=" capitalize bg-blue-600  w-full text-white font-bold px-7 py-3 rounded-lg hover:bg-blue-700 transition duration-300"> send message</button>
 
-            </form>
+            </form>  <!-- /contact form -->
 
+
+
+            <!-- contact information -->
+             <div>
+                <h3 class="text-2xl font-bold capitalize">contact information</h3>
+
+                <!-- contact items -->
+                <div class="mt-7 space-y-6">
+
+                    <!-- address -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center shrink-0"> <i class="fas fa-map-marker-alt text-blue-500 text-lg"></i></div>
+
+                        <div>
+                            <p class="font-semibold capitalize">address</p>
+                            <p class="text-gray-400 text-sm mt-1"> Egypt</p>
+                        </div>
+
+                    </div>  <!-- /address -->
+
+                    <!-- phone -->
+                    <div class="flex items-center gap-4">
+
+                        <div class="w-12 h-12 bg-slate-700  rounded-lg flex items-center justify-center shrink-0"> <i class="fas fa-phone text-blue-500 text-lg"></i> </div>
+
+                        <div>
+                            <p class="font-semibold capitalize">phone </p>
+                            <p class="text-gray-400 text-sm mt-1">+20 100 000 0000   </p>
+                        </div>
+                    </div>
+       
+                    <!-- email -->
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 bg-slate-700  rounded-lg flex items-center justify-center shrink-0"><i class="fas fa-envelope text-blue-500 text-lg"></i></div>
+
+                        <div>
+                            <p class="font-semibold capitalize">email  </p>
+                            <p class="text-gray-400 text-sm mt-1">hello@aistarter.com</p>
+                        </div>
+                    </div>    <!-- /email -->
+       
+       
+                    <!-- site map -->
+                    <div class="mt-8 p-18 rounded-2xl bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400">
+                        <div class="flex justify-center items-center gap-4">
+
+                            <div class="w-12 h-12 flex items-center justify-center mr-2"><i class="fas fa-map text-white text-4xl"></i></div>
+
+                            <div><p class="text-lg font-bold capitalize">site map</p></div>
+
+                        </div>
+
+                    </div> <!-- /site map -->
+
+                </div>
+
+            </div>  <!-- /contact information -->
+   
         </div>
-    </div>
-</section>
-<!-- /contact -->
- <!-- footer -->
-<footer class="border-t border-gray-200 py-5">
-    <div class="container mx-auto px-5 text-center">
-        <p class="text-sm text-gray-500">
+   
+    </section><!-- /contact -->
+ 
+
+<!-- footer -->
+<footer class="bg-slate-950 border-t border-slate-800 py-5">
+
+    <div class="container mx-auto px-5 flex flex-col md:flex-row
+                justify-between items-center gap-4">
+
+        <!-- copyright -->
+        <p class="text-sm text-slate-400">
             © 2026 AI Starter. All rights reserved.
         </p>
+
+
+        <!-- social icons -->
+        <div class="flex items-center gap-3">
+
+            <!-- facebook -->
+            <div class="w-9 h-9 bg-slate-800/60 rounded-full flex items-center justify-center
+                        opacity-70 hover:opacity-100 hover:bg-blue-600
+                        transition duration-300 cursor-pointer">
+                <i class="fab fa-facebook-f text-white text-sm"></i>
+            </div>
+
+            <!-- twitter -->
+            <div class="w-9 h-9 bg-slate-800/60 rounded-full flex items-center justify-center
+                        opacity-70 hover:opacity-100 hover:bg-blue-500
+                        transition duration-300 cursor-pointer">
+                <i class="fab fa-twitter text-white text-sm"></i>
+            </div>
+
+            <!-- linkedin -->
+            <div class="w-9 h-9 bg-slate-800/60 rounded-full flex items-center justify-center
+                        opacity-70 hover:opacity-100 hover:bg-blue-600
+                        transition duration-300 cursor-pointer">
+                <i class="fab fa-linkedin-in text-white text-sm"></i>
+            </div>
+
+            <!-- instagram -->
+            <div class="w-9 h-9 bg-slate-800/60 rounded-full flex items-center justify-center
+                        opacity-70 hover:opacity-100 hover:bg-blue-600
+                        transition duration-300 cursor-pointer">
+                <i class="fab fa-instagram text-white text-sm"></i>
+            </div>
+
+        </div>
+
     </div>
-</footer>
-<!-- /footer -->
+
+</footer><!-- /footer -->
     
 </body>
 </html> 
