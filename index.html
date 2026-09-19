@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>project 3</title>
+</head>
+<body>
+    <!-- nav -->
+  <nav class=" fixed w-full z-10 shadow-xl bg-white ">
+    <div class="container py-4 px-5 mx-auto flex justify-between items-center text-transform:capitalize ">
+        <div class="logo flex items-center">
+             <i class="fas fa-robot  text-2xl md:text-xl text-blue-700 mr-2  md:mr-3"></i> 
+            <h2 class=" text-2xl md:text-xl font-bold text-transform:capitalize">AI Starter</h2>
+        </div>
+
+        <div class="links  hidden md:flex">
+            <ul class="flex gap-6 text-base font-medium  capitalize">
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300 "> home </li>
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> feature</li>
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> how it work </li>
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300"> pricing</li>
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300">testimonials</li>
+                <li class="hover:text-blue-500 cursor-pointer transition duration-300">blog</li>
+            </ul>
+        </div>
+        <button class="text-xl md:text-lg  h-14 w-40  md:w-50  font-bold text-transform: capitalize text-white bg-blue-500 md:px-6 py-2 rounded-lg cursor-pointer hover bg-blue-600: hover:shadow-lg transition duration-500 ease-in"  > get start</button>
+    </div>
+</nav><!--/nav -->
+
+<!-- header -->
+ <header  class="py-12 md:py-20" >
+    <div class="container mx-auto mt-8 py-20 px-5 flex flex-col md:flex-row justify-between items-center gap-10 ">
+        <!-- caption -->
+        <div class="caption w-full md:w-1/2   md:text-left">
+            <h1  class=" ext-left text-4xl md:text-5xl  font-bold text-transform: capitalize leading-tight "> build smarter <span class="text-blue-600">work faster</span></h1>
+            <p class="mt-5 text-gray-600 text-base md:text-lg leading-7 ">AiStarter helps you turn your ideas into reality with  powerful AI tools, simple workflows and everything you needto be more production</p>
+         
+            <!-- ul -->
+            <ul class=" mt-6 flex flex-wrap justify-start gap-4 text-sm md:text-base font-medium ">
+                <li class=" flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> 10 + AI tools  </li>
+                <li class="flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> easy to use</li>
+                <li class=" flex items-center gap-2"><i class="fas fa-check-circle text-blue-600"></i> save time </li>
+            </ul>  <!-- /ul -->
+
+            <!-- btnDiv -->
+            <div class="btnDiv mt-8 flex flex-wrap  justify-start gap-4"> 
+                 <button class="text-sm font-bold text-transform: capitalize text-white bg-blue-500 px-6 py-2 rounded-lg cursor-pointer hover:shadow-lg transition duration-500 ease-in"  > get start free</button>
+                <button class="text-sm font-bold text-transform: capitalize text-blue-500  border border-blue-400 px-6 py-2 rounded-lg cursor-pointer hover:shadow-lg transition duration-500 ease-in"  > watch demo</button>
+            </div> <!-- /btnDiv -->
+        </div> <!-- /caption -->
+
+        <!-- headerImg -->
+             <div class="headerImg w-full md:w-1/2 min-h-80 rounded-3xl bg-gradient-to-br from-blue-100 via-blue-50 to-white relative overflow-hidden">
+
+            <!-- robot -->
+            <div class="absolute inset-0 flex items-center justify-center">
+                <div class="w-28 h-28 md:w-36 md:h-36 rounded-3xl bg-white shadow-xl flex items-center justify-center">
+                    <i class="fas fa-robot text-6xl md:text-7xl text-blue-600"></i>
+                </div>
+            </div>
+
+            <!-- decorative circles -->
+            <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-blue-200 opacity-60"></div>
+            <div class="absolute -bottom-12 -left-12 w-40 h-40 rounded-full bg-blue-100 opacity-70"></div>
+
+        
+
+        </div>  <!-- /headerImg -->
+
+
+
+    </div>
+
+
+ </header>
+ <!--/ header -->
+
+ <!-- features -->
+ <section class="features py-14 md:py-20">
+    <!-- ourFeatures -->
+    <div class="ourFeatures container  py-3 px-5 mx-auto text-transform: capitalize  ">
+        <h2 class="text-center text-3xl md:text-4xl py-3 font-bold text-blue-600 "> our Features</h2>
+        <p class="text-center  text-gray-600 mt-4 mx-auto leading-7 ">everything you need in one place ,powerful features designed to help you work smarter,save time and achieve your goals faster</p>
+    <!-- cardContainer-->
+        <div class="cardContainer grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+
+            <!-- card -->
+            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                <!-- icon -->
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
+                    <i class="fas fa-pen-nib text-2xl text-blue-600"></i>
+                </div>
+
+                <h3 class="text-xl font-bold capitalize"> AI writing assistant</h3>
+                  <p class="text-gray-600 mt-3 leading-6">Create and improve your content with powerful AI tools.</p>
+
+                               
+                  <ul class="mt-5 space-y-3 text-gray-600">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create content</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Improve your writing</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Optimize your content</li>
+                </ul>
+            </div> <!-- /card -->
+
+
+            <!-- card -->
+            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+
+                <!-- icon -->
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
+                    <i class="fas fa-image text-2xl text-blue-600"></i>
+                </div>
+
+                <h3 class="text-xl font-bold capitalize"> image generator </h3>
+                   <p class="text-gray-600 mt-3 leading-6">Turn your ideas into beautiful visuals in just seconds.</p>
+
+                         
+                   <ul class="mt-5 space-y-3 text-gray-600">
+                   
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Generate unique images</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Turn ideas into visuals</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create stunning designs</li>
+                </ul>
+
+        </div><!-- /card -->
+
+
+            <!-- card -->
+            <div class="card p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+               
+                        <!-- icon -->
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
+                    <i class="fas fa-code text-2xl text-blue-600"></i>
+                 </div>
+
+                <h3 class="text-xl font-bold capitalize"> code assistant</h3>
+
+                <p class="text-gray-600 mt-3 leading-6">Write better code and solve programming problems faster.</p>
+                
+                <ul class="mt-5 space-y-3 text-gray-600">
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Get coding suggestions</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Find and fix errors</li>
+
+                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Write code faster</li>
+                </ul>
+
+                
+                
+            </div>
+            <!-- /card -->
+
+        </div>
+        <!-- /cards -->
+
+
+    
+    </div> <!-- /ourFeatures -->
+ </section><!-- /features -->
+
+ 
+ <!-- statistics -->
+<section class="statistics py-14 md:py-20 bg-gradient-to-r from-blue-600 to-blue-400">
+    <div class="container mx-auto px-5">
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+
+            <div class="item">
+                <i class="fas fa-users text-2xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">
+                    50K+
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Active Users
+                </p>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-folder-open text-2xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">
+                    1M+
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Projects Created
+                </p>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-star text-2xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">
+                    4.9/5
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    User Satisfaction
+                </p>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-globe text-2xl "></i>
+                <h3 class="text-3xl md:text-4xl font-bold mt-3">
+                    120+
+                </h3>
+                <p class="text-gray-600 mt-2">
+                    Countries
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section><!-- /statistics -->
+
+<!-- team -->
+<section class="team py-14 md:py-20">
+    <div class="container mx-auto px-5">
+
+        <!-- section header -->
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold capitalize">
+                meet our creative team
+            </h2>
+
+            <p class="text-gray-600 mt-4 leading-7">
+                A creative team building smart AI solutions to help you
+                work better, faster and more efficiently.
+            </p>
+        </div>
+
+        <!-- team items -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+
+            <div class="teamItem text-center">
+                <div class="overflow-hidden rounded-xl">
+                    <div class="h-56 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-robot text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    AI Specialist
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    AI Solutions
+                </p>
+            </div>
+
+            <div class="teamItem text-center">
+                <div class="overflow-hidden rounded-xl">
+                    <div class="h-56 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-code text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Developer
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Technology
+                </p>
+            </div>
+
+            <div class="teamItem text-center">
+                <div class="overflow-hidden rounded-xl">
+                    <div class="h-56 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-lightbulb text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Creative Expert
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Creative Ideas
+                </p>
+            </div>
+
+            <div class="teamItem text-center shadow-lg">
+                <div class="overflow-hidden rounded-xl">
+                    <div class="h-56 bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-6xl text-blue-600"></i>
+                    </div>
+                </div>
+
+                <h3 class="text-xl font-bold mt-5">
+                    Product Expert
+                </h3>
+
+                <p class="text-gray-500 mt-2">
+                    Smart Products
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /team -->
+ <!-- contact -->
+<section class="contact py-14 md:py-20">
+    <div class="container mx-auto px-5">
+
+        <!-- section header -->
+        <div class="text-center max-w-2xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold capitalize">
+                contact us
+            </h2>
+
+            <p class="text-gray-600 mt-4 leading-7">
+                Have a question or need help? Our team is here to help you
+                get the most out of AI Starter.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mt-10">
+
+            <!-- contact info -->
+            <div>
+                <h3 class="text-2xl font-bold capitalize">
+                    let's talk
+                </h3>
+
+                <p class="text-gray-600 mt-4 leading-7">
+                    We'd love to hear from you. Send us a message and
+                    we'll get back to you as soon as possible.
+                </p>
+
+                <div class="mt-7 space-y-5">
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-envelope text-xl text-blue-600"></i>
+                        <span>hello@aistarter.com</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-phone text-xl text-blue-600"></i>
+                        <span>+20 100 000 0000</span>
+                    </div>
+
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-location-dot text-xl text-blue-600"></i>
+                        <span>Egypt</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- contact form -->
+            <form class="space-y-5">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                >
+
+                <textarea
+                    rows="5"
+                    placeholder="Your Message"
+                    class="w-full border border-gray-300 rounded-lg px-4 py-3 outline-none focus:border-blue-500"
+                ></textarea>
+
+                <button
+                    type="submit"
+                    class="bg-blue-600 text-white font-bold px-7 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+                >
+                    send message
+                </button>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+<!-- /contact -->
+ <!-- footer -->
+<footer class="border-t border-gray-200 py-5">
+    <div class="container mx-auto px-5 text-center">
+        <p class="text-sm text-gray-500">
+            © 2026 AI Starter. All rights reserved.
+        </p>
+    </div>
+</footer>
+<!-- /footer -->
+    
+</body>
+</html> 
