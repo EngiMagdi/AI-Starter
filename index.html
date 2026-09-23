@@ -16,7 +16,7 @@
     <div class="container mx-auto px-5 lg:px-8 py-3 md:py-4 flex justify-between items-center">
 
         <!-- logo -->
-        <div class="logo flex items-center">
+        <div class="logo flex items-center cursor-pointer group transition duration-300 hover:-translate-y-1">
             <i class="fas fa-robot text-lg md:text-2xl text-blue-600 mr-2 md:mr-3"></i>
             <h2 class="text-lg md:text-2xl font-bold capitalize"> AI Starter</h2>
         </div><!-- /logo -->
@@ -24,7 +24,7 @@
 
         <!-- links -->
         <div class="links hidden md:flex">
-            <ul class="flex items-center gap-6 lg:gap-8 text-sm lg:text-base font-medium capitalize">
+            <ul class="flex items-center gap-6 lg:gap-8 text-base lg:text-lg font-medium capitalize">
 
                 <li class="hover:text-blue-600 cursor-pointer transition duration-300">home</li>
 
@@ -42,7 +42,7 @@
         </div><!-- /links -->
 
 
-        <button class="text-xs md:text-sm font-bold capitalize text-white bg-blue-600 px-4 md:px-6 py-2 md:py-2.5 rounded-lg cursor-pointer hover:bg-blue-700 hover:shadow-lg transition duration-300">get started</button>
+        <button class="text-sm md:text-base font-bold capitalize text-white bg-blue-600 px-5 md:px-7 py-2.5 md:py-3 rounded-lg cursor-pointer hover:bg-blue-700 hover:shadow-lg transition duration-300">get started</button>
 
     </div><!-- /container -->
 
@@ -52,7 +52,7 @@
 
 
 <!-- header -->
-<header  class="pt-28  pb-12 md:pt-32 md:pb-20" >
+<header  class=" bg-blue-50/40  pt-24 pb-16  md:pt-40 md:pb-24" >
     <div class="container mx-auto mt-8 px-5 flex flex-col md:flex-row justify-between items-center gap-10 ">
         <!-- caption -->
         <div class="caption w-full md:w-1/2   md:text-left">
@@ -70,32 +70,55 @@
             
             </ul><!-- /ul -->
 
-
-
             <!-- btnDiv -->
-            <div class="btnDiv mt-8 flex flex-col md:flex-row justify-start gap-4">
+             <div class="btnDiv mt-8 flex flex-col md:flex-row justify-start gap-4">
+   
+                <!-- get started -->
+                <button class="relative overflow-hidden w-75 text-sm md:text-base font-bold capitalize text-white bg-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer group">
+                    <span class="relative z-10">get started free</span>
+                    <span class="absolute inset-y-0 left-0 w-0 bg-blue-800 group-hover:w-full transition-all duration-700"></span>
+                </button>
 
-                <button class="  w-75  text-sm md:text-base font-bold capitalize text-white bg-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer hover:bg-blue-700 hover:shadow-lg transition duration-300">get started free</button>
+   
+                <!-- watch demo -->
+                <button class="relative overflow-hidden w-75 text-sm md:text-base font-bold capitalize text-blue-600 border border-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer group">
+                    <span class="relative z-10 group-hover:text-white transition-colors duration-700"><i class="fas fa-play mr-2"></i>watch demo</span>
+                    <span class="absolute inset-y-0 left-0 w-0 bg-blue-600 group-hover:w-full transition-all duration-700"></span>
+                </button>
 
-                <button class=" w-75 text-sm md:text-base font-bold capitalize text-blue-600 border border-blue-600 px-6 py-2.5 md:py-3 rounded-lg cursor-pointer hover:bg-blue-50 hover:shadow-lg transition duration-300"><i class="fas fa-play mr-2"></i>  watch demo</button>
 
             </div><!-- /btnDiv -->
 
         </div> <!-- /caption -->
 
         <!-- headerImg -->
-             <div class="headerImg w-full md:w-1/2 h-80 md:h-96 rounded-3xl bg-gradient-to-br from-blue-500 via-blue-400 to-blue-300 relative overflow-hidden">
+             <div class="headerImg w-full md:w-1/2 h-80 md:h-96 rounded-3xl bg-gradient-to-b from-blue-500 via-blue-500 to-blue-300 relative overflow-visible">
 
             <!-- robot -->
             <div class="absolute inset-0 flex items-center justify-center">
                 <div class="w-28 h-28 md:w-36 md:h-36 rounded-3xl bg-white shadow-xl flex items-center justify-center">
-                    <i class="fas fa-robot text-6xl md:text-7xl text-blue-600"></i>
+                    <i class="fas fa-robot text-6xl md:text-7xl text-blue-600 robotIcon"></i>
                 </div>
             </div>
 
             <!-- decorative circles -->
-            <div class="absolute -top-10 -right-10 w-32 h-32 rounded-full bg-purple-400/40"></div>
-            <div class="absolute -bottom-12 -left-12 w-40 h-40 rounded-full bg-pink-400/30"></div>
+            <div class="absolute -top-[-20px]  -right-[-20px] w-20 h-20 rounded-full bg-blue-200/60"></div>
+            <div class="absolute -bottom-[-10px] -left-[-40px] w-32 h-32 rounded-full bg-blue-100/70"></div>
+
+
+            <!-- happy clients -->
+            <div class="absolute bottom-[-30px] left-[-30px] z-10 bg-white rounded-xl shadow-lg px-5 py-4 flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-blue-100 flex items-center justify-center">
+                    <i class="fas fa-users text-blue-600 text-lg"></i>
+                </div>
+
+                <div>
+                    <p class="text-sm text-gray-500">Happy Clients</p>
+                    <p class="text-xl font-bold">+500</p>
+                </div>
+            </div><!-- /happy clients -->
+
+
             
         </div>  <!-- /headerImg -->
 
@@ -108,16 +131,16 @@
     <!-- ourFeatures -->
     <div class="ourFeatures container   px-5  lg:px-8 mx-auto  capitalize  ">
         <h2 class="text-center text-3xl md:text-4xl  font-bold  "> our Features</h2>
-        <p class=" text-center  mx-auto text-gray-600 mt-4  leading-7  after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:mx-auto after:mt-5 after:rounded-full">Powerful AI features to help you work smarter, save time, and achieve more.</p>
+        <p class=" text-center  mx-auto text-gray-600 mt-5  leading-7  after:content-[''] after:block after:w-20 after:h-1 after:bg-blue-600 after:mx-auto after:mt-5 after:rounded-full">Powerful AI features to help you work smarter, save time, and achieve more.</p>
     <!-- cardContainer-->
-        <div class="cardContainer grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        <div class="cardContainer grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
 
             <!-- card -->
-            <div class="card  p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card p-7 md:p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-blue-600 hover:-translate-y-1 hover:shadow-xl transition duration-500">
 
                 <!-- icon -->
-                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
-                    <i class="fas fa-pen-nib text-2xl text-blue-600"></i>
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 ">
+                    <i class="fas fa-pen-nib text-2xl text-blue-600 "></i>
                 </div>
 
                 <h3 class="text-xl font-bold capitalize"> AI writing assistant</h3>
@@ -125,16 +148,16 @@
 
                                
                   <ul class="mt-5 space-y-3   text-sm md:text-base text-gray-600">
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create content</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Create content</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Improve your writing</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Improve your writing</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Optimize your content</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i> Optimize your content</li>
                 </ul>
             </div> <!-- /card -->
 
             <!-- card -->
-            <div class="card p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card p-7 md:p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-blue-600 hover:-translate-y-2 hover:shadow-xl transition duration-500">
 
                 <!-- icon -->
                 <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
@@ -147,20 +170,20 @@
                          
                    <ul class="mt-5 space-y-3 text-sm md:text-base  text-gray-600">
                    
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Generate unique images</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Generate unique images</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Turn ideas into visuals</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Turn ideas into visuals</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Create stunning designs</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Create stunning designs</li>
                 </ul>
 
             </div><!-- /card -->
 
             <!-- card -->
-            <div class="card  p-6 md:p-7 rounded-2xl border border-gray-200 bg-white hover:-translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="card  p-7 md:p-8 rounded-2xl border-2 border-gray-200 bg-white hover:border-blue-600 hover:-translate-y-2 hover:shadow-xl transition duration-500">
                
                         <!-- icon -->
-                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5">
+                <div class="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center mb-5 ">
                     <i class="fas fa-code text-2xl text-blue-600"></i>
                  </div>
 
@@ -169,11 +192,11 @@
                 <p class="text-gray-600  text-sm md:text-base mt-3 leading-6">Write better code and solve problems faster with AI.</p>
                 
                 <ul class="mt-5 space-y-3  text-sm md:text-base text-gray-600">
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Get coding suggestions</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i> Get coding suggestions</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i>Find and fix errors</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i>Find and fix errors</li>
 
-                    <li class="flex items-center gap-3"><i class="fas fa-check-circle text-blue-600"></i> Write code faster</li>
+                    <li class="flex items-center gap-3 transition-transform duration-300 hover:translate-x-1"><i class="fas fa-check-circle text-blue-600"></i> Write code faster</li>
                 </ul>
                 
             </div>
@@ -255,20 +278,19 @@
                         <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-robot text-4xl text-blue-600"></i> </div>
                     </div><!-- /linear gradient background -->
 
-      
                     <!-- hover layer -->
-                    <div class="absolute inset-0 bg-blue-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+                    <div class="absolute inset-0 bg-blue-700/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
             
                         <!-- instagram -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-blue-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-instagram text-blue-600 text-lg"></i></div>
 
            
                         <!-- twitter -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-blue-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-twitter text-blue-600 text-lg"></i></div>
 
             
                         <!-- facebook -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-blue-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-facebook-f text-blue-600 text-lg"></i></div>
 
                     </div> <!--/ hover layer -->
 
@@ -282,32 +304,30 @@
                 </div> <!-- /card content -->
 
             </div><!--/ team item 1 --> 
-
-
   
             <!-- team items 2-->
             <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
                 <!-- colored part -->
                 <div class="relative group">
                     <!-- linear gradient background -->
-                    <div class="h-56 bg-gradient-to-br from-purple-500 via-purple-300 to-purple-100 flex items-center justify-center">
+                    <div class="h-56 bg-gradient-to-br from-blue-400 via-blue-300 to-blue-100 flex items-center justify-center">
 
                         <!-- main icon -->
-                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-code text-4xl text-purple-600"></i></div>
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-code text-4xl text-blue-500"></i></div>
 
                     </div>  <!-- /linear gradient background -->
         
                     <!-- hover layer -->
-                    <div class="absolute inset-0 bg-purple-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+                    <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
             
                         <!-- instagram  -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-purple-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-instagram text-blue-500 text-lg"></i></div>
             
                         <!-- twitter -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-purple-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-twitter text-blue-500 text-lg"></i></div>
             
                         <!-- facebook -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-purple-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-facebook-f text-blue-500 text-lg"></i></div>
 
                     </div><!-- /hover layer -->
     
@@ -317,42 +337,38 @@
                 <!-- card content -->
                 <div class="p-5">
                     <h3 class="text-xl font-bold">Mohamed Ali</h3>
-                    <p class="text-purple-600 font-medium mt-2">Lead Developer</p>
+                    <p class="text-blue-500 font-medium mt-2">Lead Developer</p>
                     <p class="text-gray-500 text-sm mt-3 leading-6">8 years of experience in web development and modern technologies. </p>
                 </div> <!-- /card content -->
 
             </div><!-- /team item 2 -->
 
-
-
             <!-- team item 3 -->
-
             <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
 
                 <!-- colored part -->
                 <div class="relative group">
        
                     <!-- linear gradient background -->
-                    <div class="h-56 bg-gradient-to-br from-pink-500 via-pink-300 to-pink-100 flex items-center justify-center">
+                    <div class="h-56 bg-gradient-to-br from-blue-400 via-blue-300 to-blue-100 flex items-center justify-center">
 
                         <!-- main icon -->
-                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-lightbulb text-4xl text-pink-600"></i></div>
+                        <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center"><i class="fas fa-lightbulb text-4xl text-blue-600"></i></div>
 
                     </div> <!--/linear gradient background -->
-
        
                     <!-- hover layer -->
-                    <div class="absolute inset-0 bg-pink-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+                    <div class="absolute inset-0 bg-blue-600/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
 
                         <!-- nstagram -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-pink-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-instagram text-blue-600 text-lg"></i></div>
 
                         <!-- twitter -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-pink-600 text-lg"></i> </div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-twitter text-blue-600 text-lg"></i> </div>
 
             
                         <!-- facebook -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-pink-600 text-lg"></i> </div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-facebook-f text-blue-600 text-lg"></i> </div>
         
                     </div><!-- /hover layer -->
 
@@ -362,13 +378,11 @@
                 <!-- card content -->
                 <div class="p-5">
                     <h3 class="text-xl font-bold">Sara Ahmed</h3>
-                    <p class="text-pink-600 font-medium mt-2"> Creative Director </p>
+                    <p class="text-blue-600 font-medium mt-2"> Creative Director </p>
                     <p class="text-gray-500 text-sm mt-3 leading-6"> 7 years of experience in creative design and digital ideas. </p>
                 </div><!-- /card content -->
 
             </div> <!-- /team item 3 -->
-
-
 
             <!-- team item 4 -->
             <div class="teamItem text-center shadow-lg rounded-2xl overflow-hidden">
@@ -377,27 +391,26 @@
                 <div class="relative group">
        
                     <!-- linear gradient background -->
-                    <div class="h-56 bg-gradient-to-br from-green-500 via-green-300 to-green-100 flex items-center justify-center">
+                    <div class="h-56 bg-gradient-to-br from-blue-400 via-blue-300 to-blue-200 flex items-center justify-center">
 
                         <!-- main icon -->
                         <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center">
-                            <i class="fas fa-chart-line text-4xl text-green-600"></i>
+                            <i class="fas fa-chart-line text-4xl text-blue-500"></i>
                         </div> <!-- /main icon -->
 
                     </div>    <!-- /linear gradient background -->
 
-       
                     <!-- hover layer -->
-                     <div class="absolute inset-0 bg-green-500/70 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
+                     <div class="absolute inset-0 bg-blue-500/80 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center gap-4">
 
                         <!-- instagram -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-instagram text-green-600 text-lg"></i> </div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-instagram  text-blue-500 text-lg"></i> </div>
 
                         <!-- twitter -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-twitter text-green-600 text-lg"></i> </div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80"><i class="fab fa-twitter  text-blue-500 text-lg"></i> </div>
 
                         <!-- facebook -->
-                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center"><i class="fab fa-facebook-f text-green-600 text-lg"></i></div>
+                        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center transition duration-300 opacity-100 hover:opacity-80 "><i class="fab fa-facebook-f  text-blue-500 text-lg"></i></div>
 
                     </div>  <!-- /hover layer -->
 
@@ -409,7 +422,7 @@
 
                     <h3 class="text-xl font-bold">Omar Hassan </h3>
 
-                    <p class="text-green-600 font-medium mt-2"> Marketing Director</p>
+                    <p class="text-blue-500 font-medium mt-2"> Marketing Director</p>
 
                     <p class="text-gray-500 text-sm mt-3 leading-6"> 10 years of experience in marketing and brand strategy. </p>
 
@@ -423,15 +436,11 @@
 </section><!-- /team -->
 
 
-
-
 <!-- contact -->
 <section class="contact py-16 md:py-20 bg-slate-950 text-white">
- 
-        <div class=" container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 mt-12">
 
+        <div class=" container mx-auto px-5 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 ">
             <!-- contact form -->
-
             <form class=" bg-slate-800 p-6 md:p-8 rounded-2xl shadow-lg space-y-5">
                 <h3 class="text-2xl font-bold "> Contact us</h3>
 
@@ -450,11 +459,14 @@
                     placeholder="Your Message"
                     class="w-full bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"                ></textarea>
 
-                <button
-                    type="submit" class=" capitalize bg-blue-600  w-full text-white font-bold px-7 py-3 rounded-lg hover:bg-blue-700 transition duration-300"> send message</button>
 
+                    <button
+                    type="submit"
+                    class="relative overflow-hidden w-full capitalize bg-blue-600 text-white font-bold px-7 py-3 rounded-lg cursor-pointer group">
+                    <span class="relative z-10"> send message</span>
+                    <span class="absolute inset-y-0 left-0 w-0 bg-blue-800 group-hover:w-full transition-all duration-700"></span>
+                </button>
             </form>  <!-- /contact form -->
-
 
 
             <!-- contact information -->
@@ -466,7 +478,9 @@
 
                     <!-- address -->
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center shrink-0"> <i class="fas fa-map-marker-alt text-blue-500 text-lg"></i></div>
+                        <div class="w-12 h-12 bg-slate-700 group rounded-lg flex items-center justify-center shrink-0 transition duration-300 hover:bg-blue-600 hover:text-white"> 
+                            <i class="fas fa-map-marker-alt text-blue-500 text-lg transition-colors duration-300 group-hover:text-white"></i>
+                        </div>
 
                         <div>
                             <p class="font-semibold capitalize">address</p>
@@ -478,7 +492,9 @@
                     <!-- phone -->
                     <div class="flex items-center gap-4">
 
-                        <div class="w-12 h-12 bg-slate-700  rounded-lg flex items-center justify-center shrink-0"> <i class="fas fa-phone text-blue-500 text-lg"></i> </div>
+                        <div class="w-12 h-12 bg-slate-700  group rounded-lg flex items-center justify-center shrink-0  transition duration-300 hover:bg-blue-600 ">
+                             <i class=" fas fa-phone text-blue-500 text-lg transition-colors duration-300 group-hover:text-white"></i> 
+                            </div>
 
                         <div>
                             <p class="font-semibold capitalize">phone </p>
@@ -488,7 +504,9 @@
        
                     <!-- email -->
                     <div class="flex items-center gap-4">
-                        <div class="w-12 h-12 bg-slate-700  rounded-lg flex items-center justify-center shrink-0"><i class="fas fa-envelope text-blue-500 text-lg"></i></div>
+                        <div class="w-12 h-12 bg-slate-700 group  rounded-lg flex items-center justify-center shrink-0  transition duration-300 hover:bg-blue-600 hover:text-white">
+                            <i class="fas fa-envelope text-blue-500 text-lg transition-colors duration-300 group-hover:text-white"></i>
+                        </div>
 
                         <div>
                             <p class="font-semibold capitalize">email  </p>
@@ -498,23 +516,19 @@
        
        
                     <!-- site map -->
-                    <div class="mt-8 p-18 rounded-2xl bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400">
+                    <div class="mt-8 p-14 rounded-2xl bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400">
                         <div class="flex justify-center items-center gap-4">
 
                             <div class="w-12 h-12 flex items-center justify-center mr-2"><i class="fas fa-map text-white text-4xl"></i></div>
 
                             <div><p class="text-lg font-bold capitalize">site map</p></div>
-
                         </div>
-
                     </div> <!-- /site map -->
-
                 </div>
-
             </div>  <!-- /contact information -->
    
         </div>
-   
+
     </section><!-- /contact -->
  
 
@@ -542,7 +556,7 @@
 
             <!-- twitter -->
             <div class="w-9 h-9 bg-slate-800/60 rounded-full flex items-center justify-center
-                        opacity-70 hover:opacity-100 hover:bg-blue-500
+                        opacity-70 hover:opacity-100 hover:bg-blue-600
                         transition duration-300 cursor-pointer">
                 <i class="fab fa-twitter text-white text-sm"></i>
             </div>
